@@ -1,0 +1,29 @@
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\bin\Debug\Clicker.exe.config
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\bin\Debug\Clicker.exe
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\bin\Debug\Clicker.pdb
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.csprojAssemblyReference.cache
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.Form1.resources
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.Properties.Resources.resources
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.csproj.GenerateResource.cache
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.csproj.CoreCompileInputs.cache
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.exe
+C:\Users\EncantA-Tab\Documents\Visual Studio 2017\Projects\Clicker\Clicker\obj\Debug\Clicker.pdb
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.exe.config
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.exe
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.pdb
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.csprojResolveAssemblyReference.cache
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.Form1.resources
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.Properties.Resources.resources
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.csproj.GenerateResource.Cache
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.exe
+C:\Users\payam\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.pdb
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.exe.config
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.exe
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\bin\Debug\Clicker.pdb
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.csprojAssemblyReference.cache
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.Form1.resources
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.Properties.Resources.resources
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.csproj.GenerateResource.cache
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.csproj.CoreCompileInputs.cache
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.exe
+C:\Users\EncantA-Tab\Desktop\myProject\Clicker\Clicker\obj\Debug\Clicker.pdb
