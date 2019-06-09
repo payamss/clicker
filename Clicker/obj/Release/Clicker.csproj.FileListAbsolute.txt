@@ -1,0 +1,8 @@
+C:\Users\payam\Desktop\myProject\clicker\Clicker\bin\Release\Clicker.exe.config
+C:\Users\payam\Desktop\myProject\clicker\Clicker\bin\Release\Clicker.exe
+C:\Users\payam\Desktop\myProject\clicker\Clicker\bin\Release\Clicker.pdb
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.Form1.resources
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.Properties.Resources.resources
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.csproj.GenerateResource.Cache
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.exe
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.pdb
