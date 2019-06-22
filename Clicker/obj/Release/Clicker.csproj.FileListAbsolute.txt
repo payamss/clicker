@@ -6,3 +6,4 @@ C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.Properties.
 C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.csproj.GenerateResource.Cache
 C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.exe
 C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.pdb
+C:\Users\payam\Desktop\myProject\clicker\Clicker\obj\Release\Clicker.csprojResolveAssemblyReference.cache

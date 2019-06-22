@@ -66,12 +66,129 @@ namespace Clicker
                             timer2.Stop();
                             btnStart.Text = "Start";
                             SetCursorPos(Convert.ToInt16(txtMouseX.Text), Convert.ToInt16(txtMouseY.Text));
-                            DoMouseClick();
+                            for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                            {
+                                DoMouseClick(); 
+                                lblNumber.Text = (1+i).ToString();
+                                System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                            }
                             System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                             if (cb1.Checked)
                             {
                                 SetCursorPos(Convert.ToInt16(txtMouseX2.Text), Convert.ToInt16(txtMouseY2.Text));
-                                DoMouseClick();
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox1.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox2.Text), Convert.ToInt16(textBox3.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox2.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox4.Text), Convert.ToInt16(textBox5.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox3.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox6.Text), Convert.ToInt16(textBox7.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox4.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox8.Text), Convert.ToInt16(textBox9.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox5.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox10.Text), Convert.ToInt16(textBox11.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox6.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox12.Text), Convert.ToInt16(textBox13.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox7.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox14.Text), Convert.ToInt16(textBox15.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                            }
+
+                            if (checkBox8.Checked)
+                            {
+                                SetCursorPos(Convert.ToInt16(textBox16.Text), Convert.ToInt16(textBox17.Text));
+                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                {
+                                    DoMouseClick();
+                                    lblNumber.Text = (1 + i).ToString();
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                }
+                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                             }
 
                             //MessageBox.Show("DONE");
@@ -100,9 +217,10 @@ namespace Clicker
             }
             else
             {
+                btnStart.BackColor = Color.SteelBlue;
+
                 timer2.Stop();
                 btnStart.Text = "Start";
-                btnStart.BackColor = Color.SteelBlue;
 
             }
 
@@ -236,6 +354,287 @@ namespace Clicker
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            button1.Text = "Go to Location";
+
+            int dt = 0;
+
+            textBox2.Text = Cursor.Position.X.ToString();
+            textBox3.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox2.Text != Cursor.Position.X.ToString()) || (textBox3.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox2.Text = Cursor.Position.X.ToString();
+                    textBox3.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button1.Enabled = false;
+                    button1.Text = "Grabbing ...";
+                    button1.BackColor = Color.Crimson;
+
+                    if (dt > 3)
+                    {
+                        button1.Enabled = true;
+                        button1.Text = "Grab";
+                        button1.BackColor = Color.SteelBlue;
+
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+
+
+            };
+            timer3.Start();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            button2.Text = "Go to Location";
+
+            int dt = 0;
+
+            textBox4.Text = Cursor.Position.X.ToString();
+            textBox5.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox4.Text != Cursor.Position.X.ToString()) || (textBox5.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox4.Text = Cursor.Position.X.ToString();
+                    textBox5.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button2.Enabled = false;
+                    button2.Text = "Grabbing ...";
+                    button2.BackColor = Color.Crimson;
+
+                    if (dt > 3)
+                    {
+                        button2.Enabled = true;
+                        button2.Text = "Grab";
+                        button2.BackColor = Color.SteelBlue;
+
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+
+
+            };
+            timer3.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button3.Text = "Go to Location";
+            int dt = 0;
+            textBox6.Text = Cursor.Position.X.ToString();
+            textBox7.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox6.Text != Cursor.Position.X.ToString()) || (textBox7.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox6.Text = Cursor.Position.X.ToString();
+                    textBox7.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button3.Enabled = false;
+                    button3.Text = "Grabbing ...";
+                    button3.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button3.Enabled = true;
+                        button3.Text = "Grab";
+                        button3.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button4.Text = "Go to Location";
+            int dt = 0;
+            textBox8.Text = Cursor.Position.X.ToString();
+            textBox9.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox8.Text != Cursor.Position.X.ToString()) || (textBox9.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox8.Text = Cursor.Position.X.ToString();
+                    textBox9.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button4.Enabled = false;
+                    button4.Text = "Grabbing ...";
+                    button4.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button4.Enabled = true;
+                        button4.Text = "Grab";
+                        button4.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button5.Text = "Go to Location";
+            int dt = 0;
+            textBox10.Text = Cursor.Position.X.ToString();
+            textBox11.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox10.Text != Cursor.Position.X.ToString()) || (textBox11.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox10.Text = Cursor.Position.X.ToString();
+                    textBox11.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button5.Enabled = false;
+                    button5.Text = "Grabbing ...";
+                    button5.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button5.Enabled = true;
+                        button5.Text = "Grab";
+                        button5.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            button6.Text = "Go to Location";
+            int dt = 0;
+            textBox12.Text = Cursor.Position.X.ToString();
+            textBox13.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox12.Text != Cursor.Position.X.ToString()) || (textBox13.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox12.Text = Cursor.Position.X.ToString();
+                    textBox13.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button6.Enabled = false;
+                    button6.Text = "Grabbing ...";
+                    button6.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button6.Enabled = true;
+                        button6.Text = "Grab";
+                        button6.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            button7.Text = "Go to Location";
+            int dt = 0;
+            textBox14.Text = Cursor.Position.X.ToString();
+            textBox15.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox14.Text != Cursor.Position.X.ToString()) || (textBox15.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox14.Text = Cursor.Position.X.ToString();
+                    textBox15.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button7.Enabled = false;
+                    button7.Text = "Grabbing ...";
+                    button7.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button7.Enabled = true;
+                        button7.Text = "Grab";
+                        button7.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            button8.Text = "Go to Location";
+            int dt = 0;
+            textBox16.Text = Cursor.Position.X.ToString();
+            textBox17.Text = Cursor.Position.Y.ToString();
+            var timer3 = new Timer { Interval = 1000 };
+            timer3.Tick += (o, args) =>
+            {
+                if ((textBox16.Text != Cursor.Position.X.ToString()) || (textBox17.Text != Cursor.Position.Y.ToString()))
+                {
+                    textBox16.Text = Cursor.Position.X.ToString();
+                    textBox17.Text = Cursor.Position.Y.ToString();
+                }
+                else
+                {
+                    dt++;
+                    button8.Enabled = false;
+                    button8.Text = "Grabbing ...";
+                    button8.BackColor = Color.Crimson;
+                    if (dt > 3)
+                    {
+                        button8.Enabled = true;
+                        button8.Text = "Grab";
+                        button8.BackColor = Color.SteelBlue;
+                        timer3.Stop();
+                    }
+                }
+                Console.WriteLine(timer3.ToString());
+            };
+            timer3.Start();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
