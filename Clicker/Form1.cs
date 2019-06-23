@@ -65,18 +65,10 @@ namespace Clicker
                         {
                             timer2.Stop();
                             btnStart.Text = "Start";
-                            SetCursorPos(Convert.ToInt16(txtMouseX.Text), Convert.ToInt16(txtMouseY.Text));
-                            for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                            for (int j = 0; j < Convert.ToInt16(txtRepeatAll.Text); j++)
                             {
-                                DoMouseClick(); 
-                                lblNumber.Text = (1+i).ToString();
-                                System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
-                            }
-                            System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
-
-                            if (cb1.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(txtMouseX2.Text), Convert.ToInt16(txtMouseY2.Text));
+                                lblNumber2.Text = (1 + j).ToString();
+                                SetCursorPos(Convert.ToInt16(txtMouseX.Text), Convert.ToInt16(txtMouseY.Text));
                                 for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
                                 {
                                     DoMouseClick();
@@ -85,110 +77,122 @@ namespace Clicker
                                 }
                                 System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox1.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox2.Text), Convert.ToInt16(textBox3.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (cb1.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(txtMouseX2.Text), Convert.ToInt16(txtMouseY2.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox2.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox4.Text), Convert.ToInt16(textBox5.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox1.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox2.Text), Convert.ToInt16(textBox3.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox3.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox6.Text), Convert.ToInt16(textBox7.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox2.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox4.Text), Convert.ToInt16(textBox5.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox4.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox8.Text), Convert.ToInt16(textBox9.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox3.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox6.Text), Convert.ToInt16(textBox7.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox5.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox10.Text), Convert.ToInt16(textBox11.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox4.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox8.Text), Convert.ToInt16(textBox9.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox6.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox12.Text), Convert.ToInt16(textBox13.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox5.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox10.Text), Convert.ToInt16(textBox11.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox7.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox14.Text), Convert.ToInt16(textBox15.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox6.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox12.Text), Convert.ToInt16(textBox13.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
                                 }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
-                            }
-
-                            if (checkBox8.Checked)
-                            {
-                                SetCursorPos(Convert.ToInt16(textBox16.Text), Convert.ToInt16(textBox17.Text));
-                                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                if (checkBox7.Checked)
                                 {
-                                    DoMouseClick();
-                                    lblNumber.Text = (1 + i).ToString();
-                                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
-                                }
-                                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+                                    SetCursorPos(Convert.ToInt16(textBox14.Text), Convert.ToInt16(textBox15.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
 
+                                }
+
+                                if (checkBox8.Checked)
+                                {
+                                    SetCursorPos(Convert.ToInt16(textBox16.Text), Convert.ToInt16(textBox17.Text));
+                                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                                    {
+                                        DoMouseClick();
+                                        lblNumber.Text = (1 + i).ToString();
+                                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                                    }
+                                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                                }
                             }
 
                             //MessageBox.Show("DONE");
@@ -635,6 +639,139 @@ namespace Clicker
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            for (int j = 0; j < Convert.ToInt16(txtRepeatAll.Text); j++)
+            {
+                lblNumber2.Text = (1 + j).ToString();
+                SetCursorPos(Convert.ToInt16(txtMouseX.Text), Convert.ToInt16(txtMouseY.Text));
+                for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                {
+                    DoMouseClick();
+                    lblNumber.Text = (1 + i).ToString();
+                    System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                }
+                System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                if (cb1.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(txtMouseX2.Text), Convert.ToInt16(txtMouseY2.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox1.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox2.Text), Convert.ToInt16(textBox3.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox2.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox4.Text), Convert.ToInt16(textBox5.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox3.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox6.Text), Convert.ToInt16(textBox7.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox4.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox8.Text), Convert.ToInt16(textBox9.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox5.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox10.Text), Convert.ToInt16(textBox11.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox6.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox12.Text), Convert.ToInt16(textBox13.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox7.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox14.Text), Convert.ToInt16(textBox15.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+
+                if (checkBox8.Checked)
+                {
+                    SetCursorPos(Convert.ToInt16(textBox16.Text), Convert.ToInt16(textBox17.Text));
+                    for (int i = 0; i < Convert.ToInt16(textBox18.Text); i++)
+                    {
+                        DoMouseClick();
+                        lblNumber.Text = (1 + i).ToString();
+                        System.Threading.Thread.Sleep(Convert.ToInt16(clickDelay.Text));
+                    }
+                    System.Threading.Thread.Sleep(Convert.ToInt16(delay.Text));
+
+                }
+            }
         }
     }
 }

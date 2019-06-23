@@ -104,6 +104,10 @@
             this.lblNumber = new System.Windows.Forms.Label();
             this.clickDelay = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.txtRepeatAll = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.lblNumber2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -197,10 +201,10 @@
             // 
             this.btnStart.BackColor = System.Drawing.Color.SteelBlue;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Location = new System.Drawing.Point(343, 64);
+            this.btnStart.Location = new System.Drawing.Point(341, 75);
             this.btnStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(112, 90);
+            this.btnStart.Size = new System.Drawing.Size(112, 36);
             this.btnStart.TabIndex = 13;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -690,7 +694,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(270, 91);
+            this.textBox18.Location = new System.Drawing.Point(277, 91);
             this.textBox18.Margin = new System.Windows.Forms.Padding(2);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(53, 20);
@@ -710,7 +714,7 @@
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(270, 127);
+            this.textBox19.Location = new System.Drawing.Point(277, 127);
             this.textBox19.Margin = new System.Windows.Forms.Padding(2);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(53, 20);
@@ -719,7 +723,7 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(270, 163);
+            this.textBox20.Location = new System.Drawing.Point(277, 163);
             this.textBox20.Margin = new System.Windows.Forms.Padding(2);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(53, 20);
@@ -728,7 +732,7 @@
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(270, 199);
+            this.textBox21.Location = new System.Drawing.Point(277, 199);
             this.textBox21.Margin = new System.Windows.Forms.Padding(2);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(53, 20);
@@ -737,7 +741,7 @@
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(270, 235);
+            this.textBox22.Location = new System.Drawing.Point(277, 235);
             this.textBox22.Margin = new System.Windows.Forms.Padding(2);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(53, 20);
@@ -746,7 +750,7 @@
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(270, 271);
+            this.textBox23.Location = new System.Drawing.Point(277, 271);
             this.textBox23.Margin = new System.Windows.Forms.Padding(2);
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(53, 20);
@@ -755,7 +759,7 @@
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(270, 307);
+            this.textBox24.Location = new System.Drawing.Point(277, 307);
             this.textBox24.Margin = new System.Windows.Forms.Padding(2);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(53, 20);
@@ -764,7 +768,7 @@
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(270, 343);
+            this.textBox25.Location = new System.Drawing.Point(277, 343);
             this.textBox25.Margin = new System.Windows.Forms.Padding(2);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(53, 20);
@@ -773,7 +777,7 @@
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(270, 379);
+            this.textBox26.Location = new System.Drawing.Point(277, 379);
             this.textBox26.Margin = new System.Windows.Forms.Padding(2);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(53, 20);
@@ -782,7 +786,7 @@
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(270, 415);
+            this.textBox27.Location = new System.Drawing.Point(277, 415);
             this.textBox27.Margin = new System.Windows.Forms.Padding(2);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(53, 20);
@@ -802,12 +806,12 @@
             // lblNumber
             // 
             this.lblNumber.AutoSize = true;
-            this.lblNumber.Location = new System.Drawing.Point(394, 340);
+            this.lblNumber.Location = new System.Drawing.Point(370, 343);
             this.lblNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(10, 13);
+            this.lblNumber.Size = new System.Drawing.Size(16, 13);
             this.lblNumber.TabIndex = 4;
-            this.lblNumber.Text = "-";
+            this.lblNumber.Text = "---";
             // 
             // clickDelay
             // 
@@ -827,6 +831,48 @@
             this.label13.Size = new System.Drawing.Size(82, 13);
             this.label13.TabIndex = 4;
             this.label13.Text = "Delay Click (ms)";
+            // 
+            // txtRepeatAll
+            // 
+            this.txtRepeatAll.Location = new System.Drawing.Point(373, 403);
+            this.txtRepeatAll.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRepeatAll.Name = "txtRepeatAll";
+            this.txtRepeatAll.Size = new System.Drawing.Size(53, 20);
+            this.txtRepeatAll.TabIndex = 12;
+            this.txtRepeatAll.Text = "10";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(370, 368);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.TabIndex = 4;
+            this.label14.Text = " Repeat all";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.SteelBlue;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(341, 118);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(112, 36);
+            this.button9.TabIndex = 13;
+            this.button9.Text = "Fast Start";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // lblNumber2
+            // 
+            this.lblNumber2.AutoSize = true;
+            this.lblNumber2.Location = new System.Drawing.Point(416, 343);
+            this.lblNumber2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumber2.Name = "lblNumber2";
+            this.lblNumber2.Size = new System.Drawing.Size(16, 13);
+            this.lblNumber2.TabIndex = 4;
+            this.lblNumber2.Text = "---";
             // 
             // Form1
             // 
@@ -854,12 +900,15 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnGrab2);
             this.Controls.Add(this.btnGrab);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblRemaining);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblNumber2);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
@@ -887,6 +936,7 @@
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox18);
             this.Controls.Add(this.clickDelay);
+            this.Controls.Add(this.txtRepeatAll);
             this.Controls.Add(this.delay);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox5);
@@ -999,6 +1049,10 @@
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.TextBox clickDelay;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtRepeatAll;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label lblNumber2;
     }
 }
 
